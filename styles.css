@@ -47,7 +47,7 @@ nav {
 .nav-items{
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-item{
@@ -56,4 +56,21 @@ nav {
   font-weight: 700;
   color: white;
   font-size: .9em;
+}
+
+.text-input{
+  width: 140px;
+  padding: 6px 9px;
+  border: 1px solid #2f2f2f;
+  border-radius: 5px;
+}
+
+.text-input-input{
+  appearance: none;
+  border: none;
+  background: 0, 0;
+  color: white;
+  font-family: 'Lato';
+  font-size: .9rem;
+
 }
