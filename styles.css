@@ -304,3 +304,44 @@ a{
 .patreon{
   background-color: #f96855;
 }
+
+.features-row{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  margin: 0 -15px;
+}
+
+.feature-card{
+  background: var(--nav-color);
+  border-radius: 5px;
+  box-shadow: 1px 3px 1px rgb(0 0 0 / 35%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  margin-bottom: 50px;
+  padding-left: 65px;
+  color: white;
+}
+
+.feature-card img {
+  position: absolute;
+  left: -60px;
+}
+
+.feature-card p {
+  color: var(--font-color);
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.feature-card__info{
+  padding: 20px;
+}
+
+.feature-title{
+  font-size: 1.1em;
+}
