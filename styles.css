@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #1e1e1e;
+  --primary-color: #121212;
+  --nav-color: #1e1e1e;
   --font-color: #9c9c9c;
   --button-color: #2980b9;
 }
@@ -17,7 +18,7 @@ body {
 }
 
 nav {
-  background: var(--primary-color);
+  background: var(--nav-color);
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -29,6 +30,11 @@ nav {
 
 img {
   max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-logo {
@@ -198,18 +204,17 @@ img {
   padding: 0.5em;
   display: flex;
   align-items: center;
-  
 }
 
-.intro-link:first-child{
+.intro-link:first-child {
   margin-right: 5px;
 }
-.intro-link:last-child{
+.intro-link:last-child {
   margin-left: 5px;
 }
 
-.link-title{
-  font-size: .7rem;
+.link-title {
+  font-size: 0.7rem;
   flex-grow: 1;
 }
 
@@ -217,4 +222,85 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+.about-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 8vw 0;
+}
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-info {
+  flex-basis: 60%;
+  max-width: 100%;
+  padding: 12px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  margin: 0 0 40px;
+}
+
+.description {
+  font-size: 1.25rem;
+  margin: 0 0 40px;
+  max-width: 55ch;
+}
+
+.info-actions{
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  width: 550px;
+  max-width: 100%;
+  color: white;
+}
+
+.details-stats {
+  padding: 12px;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-btn{
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-shadow: 2px 1px 2px rgb(0 0 0 / 50%);
+  margin-bottom: 15px;
+  padding: 8px 14px;
+}
+
+.about-button-icon{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.about-button-text{
+  flex-grow: 1;
+}
+
+.github{
+  background-color: #2d2d2d;
+}
+
+.discord{
+  background-color: #7289da;
+}
+
+.patreon{
+  background-color: #f96855;
 }
